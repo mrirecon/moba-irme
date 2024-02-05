@@ -1,0 +1,8 @@
+# Dimensions
+200 200 1 1 1 1 1 1 1 1 8 1 1 1 1 1 
+# Command
+copy liver_FID26_rois rois_FF 
+# Files
+ <>rois_FF <liver_FID26_rois
+# Creator
+BART v0.8.00-23-g5fe0e12

@@ -1,0 +1,6 @@
+results/reco_maps_brain_ss_vol96_1	0.0003	CFL_NRMSE
+results/reco_maps_brain_ss_vol96_2	0.0003	CFL_NRMSE
+results/reco_maps_brain_ss_vol97_1	0.0003	CFL_NRMSE
+results/reco_maps_brain_ss_vol97_2	0.0003	CFL_NRMSE
+results/ss-brain-reco2			0.0003	CFL_NRMSE
+results/b0map			0.0001	CFL_NRMSE

@@ -1,0 +1,34 @@
+\documentclass[preview]{standalone}
+\usepackage{svg}
+\usepackage{graphicx}
+\usepackage{graphbox}
+
+\begin{document}
+
+\begin{figure}
+	\centering
+	% Part A
+	\begin{minipage}{.03\textwidth}
+		\includegraphics[width=\textwidth]{A.pdf}\vspace*{4.3cm}
+	\end{minipage}
+	\hfill %
+	\begin{minipage}{.96\textwidth}
+		\includegraphics[align=c,width=\textwidth]{figure_04_A.pdf}
+	\end{minipage}%
+
+	\vspace*{0.2cm}
+
+	% Part B
+	\begin{minipage}{.03\textwidth}
+		\includegraphics[width=\textwidth]{B.pdf}\vspace*{2.7cm}
+	\end{minipage}
+	\hfill %
+	\begin{minipage}{.96\textwidth}
+		\hspace{1.5cm}
+		\includegraphics[align=c,width=.33\textwidth]{bland_T1_brain_scan.pdf}\hspace{0.8cm}
+		\includegraphics[align=c,width=.30\textwidth]{bland_R2s_brain_scan.pdf}\hfill
+	\end{minipage}%
+
+\end{figure}
+
+\end{document}

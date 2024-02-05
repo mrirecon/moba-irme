@@ -1,0 +1,5 @@
+./01_sim/run_figs.sh
+./02_phantom/run_figs.sh
+./03_04_brain/run_figs.sh
+./05_liver/run_figs.sh
+

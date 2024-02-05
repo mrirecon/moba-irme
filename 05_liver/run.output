@@ -1,0 +1,5 @@
+results/reco_liver_maps_liver_1-6_a	0.0002	CFL_NRMSE
+results/reco_liver_maps_liver_1-6_b	0.0002	CFL_NRMSE
+results/reco_wf_ss_liver_1-6_a		0.0002	CFL_NRMSE
+results/reco_wf_ss_liver_1-6_b		0.0002	CFL_NRMSE
+results/ss-liver-reco2	0.0003	CFL_NRMSE

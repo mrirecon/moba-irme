@@ -1,0 +1,8 @@
+# Dimensions
+256 256 1 1 1 1 1 1 1 1 8 1 1 1 1 1 
+# Command
+copy vol_0097_rois2 rois_t1 
+# Files
+ <>rois_t1 <vol_0097_rois2
+# Creator
+BART v0.8.00-23-g5fe0e12

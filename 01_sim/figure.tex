@@ -1,0 +1,65 @@
+\documentclass[preview]{standalone}
+\usepackage{svg}
+\usepackage{graphicx}
+\usepackage{graphbox}
+
+\begin{document}
+
+\begin{figure}
+	\centering
+	% Part A
+	\begin{minipage}{.03\textwidth}
+		\includegraphics[width=\textwidth]{A.pdf}\vspace*{2.4cm}
+	\end{minipage}
+	\hfill %
+	\begin{minipage}{.96\textwidth}
+		\includegraphics[align=c,width=\textwidth]{figure_A.pdf}
+	\end{minipage}%
+
+	\vspace*{-0.2cm}
+
+	% Part B
+	\begin{minipage}{.03\textwidth}
+		\includegraphics[width=\textwidth]{B.pdf}\vspace*{2cm}
+	\end{minipage}
+	\hfill %
+	\begin{minipage}{.96\textwidth}
+		\includegraphics[align=c,width=.18\textwidth]{bland_T1w_num_ref.pdf}\hfill
+		\includegraphics[align=c,width=.18\textwidth]{bland_T1f_num_ref.pdf}\hfill
+		\includegraphics[align=c,width=.18\textwidth]{bland_FF_num_ref.pdf}\hfill
+		\includegraphics[align=c,width=.18\textwidth]{bland_R2s_num_ref.pdf}\hfill
+		\includegraphics[align=c,width=.18\textwidth]{bland_B0_num_ref.pdf}\hfill
+	\end{minipage}%
+
+	\vspace*{-0.2cm}
+
+	% Part C
+	\begin{minipage}{.03\textwidth}
+		\includegraphics[width=\textwidth]{C.pdf}\vspace*{2.4cm}
+	\end{minipage}
+	\hfill %
+	\begin{minipage}{.96\textwidth}
+		\includegraphics[align=c,width=.21\textwidth]{figure_C_1.pdf}
+		\hspace*{0.05cm}
+		\includegraphics[align=c,width=.22\textwidth]{bland_t1map_FF0_2_in.pdf}\hfill
+		\includegraphics[align=c,width=.21\textwidth]{figure_C_2.pdf}
+		\includegraphics[align=c,width=.22\textwidth]{bland_t1map_FF0_2_out.pdf}
+		\hspace*{0.4cm}
+	\end{minipage}%
+	
+	\vspace*{0.2cm}
+
+	% Part D
+	\begin{minipage}{.03\textwidth}
+		\includegraphics[width=\textwidth]{D.pdf}\vspace*{2.4cm}%
+	\end{minipage}
+	\hfill %
+	\begin{minipage}{.96\textwidth}
+		\hspace*{1cm}
+		\includegraphics[align=c,width=.25\textwidth]{rel_diff_FF_T1_200.pdf}\hspace*{0.2cm}
+		\includegraphics[align=c,width=.25\textwidth]{rel_diff_FF_T1_800.pdf}\hspace*{0.2cm}
+		\includegraphics[align=c,width=.25\textwidth]{rel_diff_FF_T1_1400.pdf}\hfill
+	\end{minipage}%
+\end{figure}
+
+\end{document}

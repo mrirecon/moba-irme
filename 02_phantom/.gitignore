@@ -1,0 +1,4 @@
+!rois_and_masks/*.cfl
+!rois_and_masks/*.hdr
+!rois_and_masks/reference/*.cfl
+!rois_and_masks/reference/*.hdr

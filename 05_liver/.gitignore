@@ -1,0 +1,4 @@
+!rois_and_masks/scan1/*.cfl
+!rois_and_masks/scan1/*.hdr
+!rois_and_masks/scan2/*.cfl
+!rois_and_masks/scan2/*.hdr

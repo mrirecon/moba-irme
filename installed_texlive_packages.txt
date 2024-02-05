@@ -1,0 +1,12 @@
+i catchfile: Catch an external file into a macro
+i extract: Extract parts of a document and write to another document
+i graphbox: Extend graphicx to improve placement of graphics
+i graphics: The LaTeX standard graphics bundle
+i pgf: Create PostScript and PDF graphics in TeX
+i pgfplots: Create normal/logarithmic plots in two and three dimensions
+i preview: Extract bits of a LaTeX source for output
+i stack: Tools to define and use stacks
+i standalone: Compile TeX pictures stand-alone or as part of a document
+i svg: Include and extract SVG pictures in LaTeX documents
+i transparent: Using a color stack for transparency with pdfTeX
+i trimspaces: Trim spaces around an argument or within a macro

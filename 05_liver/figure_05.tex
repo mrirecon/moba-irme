@@ -1,0 +1,45 @@
+\documentclass[preview]{standalone}
+\usepackage{svg}
+\usepackage{graphicx}
+\usepackage{graphbox}
+
+\begin{document}
+
+\begin{figure}
+	\centering
+	% Part A
+	\begin{minipage}{.03\textwidth}
+		\includegraphics[width=\textwidth]{A.pdf}\vspace*{6cm}
+	\end{minipage}
+	\hfill %
+	\begin{minipage}{.96\textwidth}
+		\includegraphics[align=c,width=\textwidth]{figure_05_part_A.pdf}
+	\end{minipage}%
+
+	\vspace*{0.2cm}
+
+	% Part B
+	\begin{minipage}{.03\textwidth}
+		\includegraphics[width=\textwidth]{B.pdf}\vspace*{2.7cm}
+	\end{minipage}
+	\hfill %
+	\begin{minipage}{.96\textwidth}
+		\includegraphics[align=c,width=.30\textwidth]{bland_T1_liver_ref.pdf}\hspace*{0.2cm}
+		\includegraphics[align=c,width=.30\textwidth]{bland_R2s_liver_ref.pdf}\hspace*{0.2cm}
+		\includegraphics[align=c,width=.30\textwidth]{bland_FF_liver_ref.pdf}
+	\end{minipage}%
+
+	% Part C
+	\begin{minipage}{.03\textwidth}
+		\includegraphics[width=\textwidth]{C.pdf}\vspace*{2.7cm}
+	\end{minipage}
+	\hfill %
+	\begin{minipage}{.96\textwidth}
+		\includegraphics[align=c,width=.30\textwidth]{bland_T1_liver_scan.pdf}\hspace*{0.2cm}
+		\includegraphics[align=c,width=.30\textwidth]{bland_R2s_liver_scan.pdf}\hspace*{0.2cm}
+		\includegraphics[align=c,width=.30\textwidth]{bland_FF_liver_scan.pdf}
+	\end{minipage}%
+
+\end{figure}
+
+\end{document}

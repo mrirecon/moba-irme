@@ -1,0 +1,11 @@
+# Skip
+*.cfl
+*.hdr
+*.code-workspace
+*.log
+*-converted-to.pdf
+*.pyc
+*.aux
+*.fls
+*.fdb_latexmk
+*/svg-inkscape/*
