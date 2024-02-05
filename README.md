@@ -4,7 +4,7 @@
 This repository includes the scripts to create the Figures for the publication
 
 > #### Model-Based Reconstruction for Joint Estimation of $T_{1}$, $R_{2}^{*}$ and $B_{0}$ Field Maps Using Single-Shot Inversion-Recovery Multi-Echo Radial FLASH
-> Wang, X, Scholand, N, Tan, Z, Mackner, D, Telezki, V, Blumenthal, M, Schaten, P, Uecker, M.
+> X Wang, N Scholand, Z Tan, D Mackner, V Telezki, M Blumenthal, P Schaten, M Uecker.
 >
 > Submitted to Magnetic Resonance in Medicine
 > 
@@ -35,7 +35,7 @@ tlmgr install --usermode `cat installed_texlive_packages.txt`
 ```
 Additionally, the command line tool from `Inkscape` 1.2.2 (b0a8486541, 2022-12-01) is needed.
 
-#### Data
+## Data
 The data is hosted on [ZENODO](https://zenodo.org/) and **must be downloaded first**.
 
 * Manual download: https://doi.org/10.5281/zenodo.10529421
