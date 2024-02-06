@@ -149,7 +149,7 @@ done
 NAME=liver_1-6_a
 SCAN=scan1
 
-bart fmac rois_and_masks/scan1/rois_t1 ss-liver-t1map2 rois_t1_ref
+bart fmac rois_and_masks/scan1/rois_t1_single_echo ss-liver-t1map2 rois_t1_ref
 
 bart fmac rois_and_masks/${SCAN}/rois_r2s R2s2_ss_${NAME} rois_r2s_ref
 

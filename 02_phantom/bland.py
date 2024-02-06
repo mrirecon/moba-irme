@@ -32,10 +32,10 @@ def bland_altman_plot_1(data1, data2, out_file, yliml, ylimm, label=False, *args
 	plt.axhline(md - 1.96*sd, color='red', linestyle='--', zorder=-1)
 	plt.ylim(yliml, ylimm)
 
-	if (label):
-		plt.text(np.max(mean), np.max(md + 1.96*sd), "Mean + 1.96 SD", horizontalalignment='right', verticalalignment='bottom', color = "red")
+	if (label): # +- 5 to increase letter distance to line
+		plt.text(np.max(mean), np.max(md + 1.96*sd)+5, "Mean + 1.96 SD", horizontalalignment='right', verticalalignment='bottom', color = "red")
 
-		plt.text(np.max(mean), np.max(md - 1.96*sd), "Mean - 1.96 SD", horizontalalignment='right', verticalalignment='top', color = "red")
+		plt.text(np.max(mean), np.max(md - 1.96*sd)-5, "Mean - 1.96 SD", horizontalalignment='right', verticalalignment='top', color = "red")
 
 	# plt.rcParams.update({'font.size': 38, 'font.sans-serif':'Arial'})
 
@@ -71,7 +71,7 @@ if __name__ == "__main__":
 	out_file = "bland_T1_phantom_ref.pdf"
 	fig = plt.figure()
 	ax = fig.add_subplot(1, 1, 1)
-	bland_altman_plot_1(reft1*1000, t1*1000, out_file, -100, 100) # "*1000" [s] -> [ms]
+	bland_altman_plot_1(reft1*1000, t1*1000, out_file, -100, 100, True) # "*1000" [s] -> [ms]
 	# ax.set_xticks(np.arange(600, 1600, 400))
 	ax.grid()
 	plt.xlabel("$T_{1}$ Average / ms")
@@ -83,7 +83,7 @@ if __name__ == "__main__":
 	out_file = "bland_R2s_phantom_ref.pdf"
 	fig = plt.figure()
 	ax = fig.add_subplot(1, 1, 1)
-	bland_altman_plot_1(refr2s, r2s, out_file, -5, 5, True)
+	bland_altman_plot_1(refr2s, r2s, out_file, -5, 5)
 	ax.set_xticks(np.arange(14, 23, 2))
 	ax.grid()
 	plt.xlabel("$R_{2}^{*}$ Average / s$^{-1}$")

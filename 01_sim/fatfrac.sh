@@ -1,14 +1,4 @@
 #!/bin/bash
-# Copyright 2020. Uecker Lab, University Medical Center Goettingen.
-# All rights reserved. Use of this source code is governed by
-# a BSD-style license which can be found in the LICENSE file.
-# 
-# Authors:
-# 2020 Zhengguo Tan <zhengguo.tan@med.uni-goettingen.de>
-# 
-# This script is used to compute fat fraction based on 
-# water and fat images
-# 
 
 set -e
 

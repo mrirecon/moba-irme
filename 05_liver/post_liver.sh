@@ -1,9 +1,5 @@
 #!/bin/bash
-# 
-# Copyright 2023
 
-# Author: Xiaoqing Wang, 2022-2023
-# xwang106@mgh.harvard.edu
 
 
 set -e

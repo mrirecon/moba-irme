@@ -9,10 +9,11 @@ import cfl
 import matplotlib.pyplot as plt
 import numpy as np
 
+FS = 38
 
 def bland_altman_plot_1(data1, data2, out_file, yliml, ylimm, *args, **kwargs):
 
-	plt.rcParams.update({'font.size': 38, 'lines.linewidth': 8})
+	plt.rcParams.update({'font.size': FS, 'lines.linewidth': 8})
 
 	data1     = np.asarray(data1)
 	data2     = np.asarray(data2)
@@ -67,8 +68,8 @@ if __name__ == "__main__":
 	bland_altman_plot_1(ref[:,0]*1000, mean*1000, out_file, -3000, 3000) # "*1000" [s] -> [ms]
 	# ax.set_xticks(np.arange(600, 1600, 400))
 	ax.grid()
-	plt.xlabel("$T_1$ Average / ms", fontsize=35)
-	plt.ylabel("$T_1$ Difference / ms \n Ref. - " + label, fontsize=35)
+	plt.xlabel("$T_1$ Average / ms", fontsize=FS - 3)
+	plt.ylabel("$T_1$ Difference / ms \n Ref. - " + label, fontsize=FS - 3)
 	plt.savefig(out_file, dpi=350, bbox_inches='tight',pad_inches = 0)
 
 

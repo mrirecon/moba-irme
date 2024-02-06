@@ -32,10 +32,10 @@ def bland_altman_plot_1(data1, data2, out_file, yliml, ylimm, label=False, *args
 	plt.axhline(md - 1.96*sd, color='red', linestyle='--')
 	plt.ylim(yliml, ylimm)
 
-	if (label):
-		plt.text(np.max(mean), np.max(md + 1.96*sd), "Mean + 1.96 SD", horizontalalignment='right', verticalalignment='bottom', color = "red")
+	if (label): # +- 5 for increase distance between line and text
+		plt.text(np.max(mean), np.max(md + 1.96*sd)+5, "Mean + 1.96 SD", horizontalalignment='right', verticalalignment='bottom', color = "red")
 
-		plt.text(np.max(mean), np.max(md - 1.96*sd), "Mean - 1.96 SD", horizontalalignment='right', verticalalignment='top', color = "red")
+		plt.text(np.max(mean), np.max(md - 1.96*sd)-5, "Mean - 1.96 SD", horizontalalignment='right', verticalalignment='top', color = "red")
 
 
 ##################################################################

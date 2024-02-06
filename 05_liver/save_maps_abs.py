@@ -1,12 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-# 
-# Copyright 2020-2021. Uecker Lab, University Medical Center Goettingen.
-#
-# Author: xiaoqing.wang@med.uni-goettingen.de
 
-"""
 
 import numpy as np
 

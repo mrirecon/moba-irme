@@ -26,16 +26,16 @@ def bland_altman_plot_1(data1, data2, out_file, yliml, ylimm, label=False, *args
 	print(diff)
 
 	plt.figure(figsize=(10/1.5, 9/1.5), dpi=80)
-	plt.scatter(mean, diff, s=120, c='black', *args, **kwargs)
 	plt.axhline(md,           color='blue', linestyle='--',)
 	plt.axhline(md + 1.96*sd, color='red', linestyle='--')
 	plt.axhline(md - 1.96*sd, color='red', linestyle='--')
+	plt.scatter(mean, diff, s=120, c='black', *args, **kwargs)
 	plt.ylim(yliml, ylimm)
 
-	if (label):
-		plt.text(np.max(mean), np.max(md + 1.96*sd), "Mean + 1.96 SD", horizontalalignment='right', verticalalignment='bottom', color = "red")
+	if (label): # +- 5 for increase distance between line and text
+		plt.text(np.max(mean), np.max(md + 1.96*sd)+5, "Mean + 1.96 SD", horizontalalignment='right', verticalalignment='bottom', color = "red")
 
-		plt.text(np.max(mean), np.max(md - 1.96*sd), "Mean - 1.96 SD", horizontalalignment='right', verticalalignment='top', color = "red")
+		plt.text(np.max(mean), np.max(md - 1.96*sd)-5, "Mean - 1.96 SD", horizontalalignment='right', verticalalignment='top', color = "red")
 
 ##################################################################
 
@@ -63,7 +63,7 @@ if __name__ == "__main__":
 	out_file = "bland_T1_liver_ref.pdf"
 	fig = plt.figure()
 	ax = fig.add_subplot(1, 1, 1)
-	bland_altman_plot_1(ref[:,0]*1000, scan1[:,0]*1000, out_file, -100, 100) # "*1000" [s] -> [ms]
+	bland_altman_plot_1(ref[:,0]*1000, scan1[:,0]*1000, out_file, -100, 100, True) # "*1000" [s] -> [ms]
 	# ax.set_xticks(np.arange(600, 1600, 400))
 	ax.grid()
 	plt.xlabel("$T_{1}$ Average / ms")

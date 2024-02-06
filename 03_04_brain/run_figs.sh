@@ -88,14 +88,13 @@ bart join 11 rois_t1_ref rois_r2s_ref rois_ref
 
 # Extract ROIs of IR ME Scans
 
-# FIXME: Not used R2s ROIs?
-extract_rois rois_and_masks/vol96/scan1/rois_{t1,t1} brain_ss_vol96_1
+extract_rois rois_and_masks/vol96/scan1/rois_{t1,r2s} brain_ss_vol96_1
 
-extract_rois rois_and_masks/vol96/scan2/rois_{t1,t1} brain_ss_vol96_2
+extract_rois rois_and_masks/vol96/scan2/rois_{t1,r2s} brain_ss_vol96_2
 
-extract_rois rois_and_masks/vol97/scan1/rois_{t1,t1} brain_ss_vol97_1
+extract_rois rois_and_masks/vol97/scan1/rois_{t1,r2s} brain_ss_vol97_1
 
-extract_rois rois_and_masks/vol97/scan2/rois_{t1,t1} brain_ss_vol97_2
+extract_rois rois_and_masks/vol97/scan2/rois_{t1,r2s} brain_ss_vol97_2
 
 # Join all ROI analysis results
 

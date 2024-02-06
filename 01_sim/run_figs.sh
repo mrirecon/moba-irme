@@ -1,8 +1,5 @@
 #!/bin/bash
-# Copyright 2024. 
-#
-# Authors:	Xiaoqing Wang, 2022-2024, xiaoqing.wang2010@gmail.com
-#		Nick Scholand, 2023-2024, scholand@tugraz.at
+
 
 set -euBx
 
@@ -32,7 +29,7 @@ python3 save_maps.py r2starmap_masked magma 0 100 r2starmap.png
 
 # B0
 bart fmac mask results/fB0map fB0map_masked
-python3 save_maps.py fB0map_masked RdBu_r -50 50 fB0map.png
+python3 save_maps.py fB0map_masked RdBu_r -50 50 fB0map.png 0
 
 # FF
 bart extract 6 1 2 results/reco_maps reco_maps_M0w
@@ -53,7 +50,7 @@ N_REGIONS=$(bart show -d 6 tmp)
 
 # bart extract 6 1 $N_REGIONS tmp tmp2 # Remove water background from ROIs
 
-bart morphop -e 9 tmp rois # Shrink ROIs slightly to avoid edge artifacts
+bart morphop -e 3 tmp rois # Shrink ROIs slightly to avoid edge artifacts
 
 # ROI Analysis for Subfigure B
 
@@ -132,10 +129,7 @@ python3 rel_diff.py results/ref_values ref_ff joined_rois rel_diff_FF_T1
 
 # Create final Figure
 
-# inkscape figure/figure_part_A.svg --export-dpi 300 --export-background=white --export-filename=figure_A.png
 inkscape figure/figure_part_A.svg --export-background=white --export-filename=figure_A.pdf
-# inkscape figure/figure_part_A.svg --export-background=white --export-filename=figure_A.eps
-
 inkscape figure/figure_part_C_1.svg --export-background=white --export-filename=figure_C_1.pdf
 inkscape figure/figure_part_C_2.svg --export-background=white --export-filename=figure_C_2.pdf
 

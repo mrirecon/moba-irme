@@ -1,8 +1,5 @@
 #!/bin/bash
-# Copyright 2024. 
-#
-# Authors:	Xiaoqing Wang, 2022-2024, xiaoqing.wang2010@gmail.com
-#		Nick Scholand, 2023-2024, scholand@tugraz.at
+
 
 set -eux
 

@@ -67,10 +67,7 @@ if [ ! -e ${ksp}.cfl ] ; then
         exit 1
 fi
 
-# FIXME: Why?!
-# export BART_COMPAT_VERSION="v0.7.00"
-
-# model-based T1 reconstruction
+# Model-Based T1 Reconstruction
 
 readout=$(bart show -d1 $traj)
 overgrid=1.0

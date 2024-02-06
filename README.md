@@ -4,12 +4,13 @@
 This repository includes the scripts to create the Figures for the publication
 
 > #### Model-Based Reconstruction for Joint Estimation of $T_{1}$, $R_{2}^{*}$ and $B_{0}$ Field Maps Using Single-Shot Inversion-Recovery Multi-Echo Radial FLASH
-> X Wang, N Scholand, Z Tan, D Mackner, V Telezki, M Blumenthal, P Schaten, M Uecker.
+> X Wang*, N Scholand*, Z Tan, D Mackner, V Telezki, M Blumenthal, P Schaten, M Uecker.
 >
 > Submitted to Magnetic Resonance in Medicine
 > 
 > [Preprint on ArXiv (DOI: ????)](future-link)
-
+>
+> $^*$contributed equally to this work
 
 ## Requirements
 This repository has been tested on Debian 12, but is assumed to work on other Linux-based operating systems, too.
@@ -50,6 +51,8 @@ Note: The data must be stored in the `./data` folder!
 Each folder contains a README file explaining how the figure can be reproduced.
 
 ## Runtime
+
+Here, the overall run time for executing **ALL** scripts in this repository (including the figure generation) is addressed. Individual 8 parameter IR-ME reconstructions take between 10-20 min depending on the accessible hardware.
 
 |    CPU   |   GPU   | **Runtime** [min] |
 | -------- | ------- | ------- |

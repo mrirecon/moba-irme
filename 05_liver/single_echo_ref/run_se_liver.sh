@@ -28,7 +28,7 @@ nspokes_per_frame=25
 
 bash ${REL_PATH}/se_prep_liver.sh -s$READ -R$TR -G$GA -p$nspokes -f$nspokes_per_frame -m1 -S1 -c$nstate ksp3 data2 traj3 TI2
 
-bash ${REL_PATH}/se_reco_liver.sh -m1 -R$lambda -o$overgrid TI2 traj3 data2 ${REL_PATH}/../results/ss-liver-reco2 | tee -a reco2.log
+bash ${REL_PATH}/se_reco_liver.sh -m1 -k -R$lambda -o$overgrid TI2 traj3 data2 ${REL_PATH}/../results/ss-liver-reco2 | tee -a reco2.log
 
 bash ${REL_PATH}/se_post_liver.sh -R$TR -r$res ${REL_PATH}/../results/ss-liver-reco2 ${REL_PATH}/../results/ss-liver-t1map2
 
