@@ -1,7 +1,7 @@
 #!/bin/bash
 
-set -e
-
+set -euBx
+set -o pipefail
 
 helpstr=$(cat <<- EOF
 compute fat fraction

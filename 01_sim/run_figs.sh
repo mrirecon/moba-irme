@@ -2,6 +2,7 @@
 
 
 set -euBx
+set -o pipefail
 
 # Run reconstructions
 

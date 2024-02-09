@@ -1,6 +1,7 @@
 #!/bin/bash
 
-set -eux
+set -euBx
+set -o pipefail
 
 usage="Usage: $0 [-R TR] [-r res] <reco> <t1map>"
 

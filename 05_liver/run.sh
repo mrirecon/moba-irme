@@ -1,7 +1,7 @@
 #!/bin/bash
 
-set -eux
-
+set -euBx
+set -o pipefail
 
 [ -d results ] && rm -rf results
 mkdir results

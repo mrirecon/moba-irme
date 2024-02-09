@@ -1,6 +1,7 @@
 #!/bin/bash
 
-set -eux
+set -euBx
+set -o pipefail
 
 helpstr=$(cat <<- EOF
 Preparation of traj, data and inversion times for IR SMS Radial FLASH.

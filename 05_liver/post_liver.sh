@@ -1,8 +1,7 @@
 #!/bin/bash
 
-
-
-set -e
+set -euBx
+set -o pipefail
 
 usage="Usage: $0 [-D TD] [-r res] [-f] <reco> <reco_maps> <watert1map> <r2starmap> <fB0map> <fatt1map>"
 

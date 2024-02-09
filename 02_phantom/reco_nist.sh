@@ -1,7 +1,7 @@
 #!/bin/bash
 
-
-set -eux
+set -euBx
+set -o pipefail
 
 usage="Usage: $0 [-R lambda] [-F nframe] [-a fB0_a] [-b fB0_b] [-i newton] [-o overgrid] [-I] [-M] [-f] <TI> <TE> <traj> <ksp> <output> <output_sens>"
 

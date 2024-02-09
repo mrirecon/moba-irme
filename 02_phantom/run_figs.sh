@@ -1,6 +1,7 @@
 #!/bin/bash
 
-set -eux
+set -euBx
+set -o pipefail
 
 ./run.sh
 
