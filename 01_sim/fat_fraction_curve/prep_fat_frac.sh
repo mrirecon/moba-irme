@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euBx
+set -o pipefail
 
 helpstr=$(cat <<- EOF
 Preparation of traj, data, inversion and echo times for IR Radial Multi-echo FLASH.

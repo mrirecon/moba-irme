@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euBx
+set -o pipefail
 
 usage="Usage: $0 [-m sms] [-R lambda] [-k] [-o overgrid] <TI> <traj> <ksp> <output> <output_sens>"
 

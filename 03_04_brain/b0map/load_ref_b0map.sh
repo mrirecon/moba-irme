@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euBx
+set -o pipefail
 
 # B0 Mapping with Siemens Sequence "gre_field_mapping" based on
 # Nayak, K.S. and Nishimura, D.G. (2000),

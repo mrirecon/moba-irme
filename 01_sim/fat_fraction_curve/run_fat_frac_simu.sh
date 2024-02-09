@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euBx
+set -o pipefail
 
 FULL_PATH=$(realpath ${0})
 REL_PATH=$(dirname ${FULL_PATH})
