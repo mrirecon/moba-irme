@@ -8,7 +8,7 @@ This repository includes the scripts to create the Figures for the publication
 >
 > Submitted to Magnetic Resonance in Medicine
 > 
-> [Preprint on ArXiv (DOI: ????)](future-link)
+> [Preprint on ArXiv (arXiv:2402.05366)](https://arxiv.org/abs/2402.05366)
 >
 > $^*$contributed equally to this work
 
