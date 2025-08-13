@@ -1,3 +1,8 @@
+**The main repository has moved to: https://gitlab.tugraz.at/ibi/mrirecon/papers/moba-ir-me**
+
+**Please check there for updates**
+
+
 # Model-Based Reconstruction for Joint Estimation of $T_{1}$, $R_{2}^{*}$ and $B_{0}$ Field Maps Using Single-Shot Inversion-Recovery Multi-Echo Radial FLASH
 
 
